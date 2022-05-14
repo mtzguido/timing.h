@@ -28,13 +28,12 @@ static int time_par = 1;
 				__tdiff(__t1p, __t2p),			\
 				__tdiff(__t1w, __t2w));			\
 		if (time_par)						\
-			fprintf(stderr, "\t parF = %.2f",	\
+			fprintf(stderr, "\t parF = %.2f",		\
 					__tdiff(__t1p, __t2p)/		\
 					__tdiff(__t1w, __t2w));		\
 		fprintf(stderr, "\n");					\
 		if (__vv)						\
-		        *__vv = (__t2w.tv_sec - __t1w.tv_sec)		\
-		              + 1e-9 * (__t2w.tv_nsec - __t1w.tv_nsec);	\
+			*__vv = __tdiff(__t1w, __t2w);			\
 		ret;})
 
 /*
