@@ -1,6 +1,11 @@
 #ifndef __TIMING_H
 #define __TIMING_H
 
+/*
+ * La última versión de este archivo siempre está en:
+ * https://raw.githubusercontent.com/mtzguido/timing.h/master/timing.h
+ */
+
 #include <time.h>
 #include <stdio.h>
 
